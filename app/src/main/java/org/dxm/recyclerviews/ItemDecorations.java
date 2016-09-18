@@ -18,10 +18,9 @@ public class ItemDecorations {
     public static RecyclerView.ItemDecoration margin(int margin) {
         return marginBuilder().left(margin).top(margin).right(margin).bottom(margin).build();
     }
-    public static GridSpacingBuilder gridSpacingBuilder(@NonNull GridLayoutManager.SpanSizeLookup spanSizeLookup) {
+    public static GridSpacingBuilder gridSpacingBuilder() {
         return new GridSpacingBuilder();
     }
-
     public static LinearMarginBuilder linearSpacingBuilder() {
         return new LinearMarginBuilder();
     }
