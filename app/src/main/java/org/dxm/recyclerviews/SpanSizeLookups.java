@@ -87,7 +87,7 @@ public class SpanSizeLookups {
         this.from = from;
       }
 
-      public Builder to(int to) {
+      public ViewTypeBuilder to(int to) {
         builder.mappings.add(new Pair<>(from, to));
         return builder;
       }
