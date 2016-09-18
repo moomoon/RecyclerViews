@@ -19,7 +19,7 @@ public class ItemDecorations {
         return marginBuilder().left(margin).top(margin).right(margin).bottom(margin).build();
     }
     public static GridSpacingBuilder gridSpacingBuilder(@NonNull GridLayoutManager.SpanSizeLookup spanSizeLookup) {
-        return new GridSpacingBuilder(spanSizeLookup);
+        return new GridSpacingBuilder();
     }
 
     public static LinearMarginBuilder linearSpacingBuilder() {
