@@ -35,7 +35,7 @@ public class SpanSizeLookups {
     }
   }
 
-  @NonNull public static Builder viewTypeBuilder(@NonNull RecyclerView.Adapter adapter) {
+  @NonNull public static ViewTypeBuilder viewTypeBuilder(@NonNull RecyclerView.Adapter adapter) {
     return new ViewTypeBuilder(adapter);
   }
 
@@ -49,7 +49,7 @@ public class SpanSizeLookups {
 
     @NonNull public abstract GridLayoutManager.SpanSizeLookup build();//
   }
-  private static class ViewTypeBuilder extends Builder {
+  public static class ViewTypeBuilder extends Builder {
     @NonNull private final RecyclerView.Adapter adapter;
     @NonNull private final List<Pair<Integer, Integer>> mappings = new ArrayList<>();
     @Nullable private Integer defaultSpanSize = null;
