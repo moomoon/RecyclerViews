@@ -22,8 +22,8 @@ public class ItemDecorations {
         return new GridSpacingBuilder(spanSizeLookup);
     }
 
-    public static LinearMarginBuilder linearSpacingBuilder(@NonNull RecyclerView.Adapter adapter) {
-        return new LinearMarginBuilder(adapter);
+    public static LinearMarginBuilder linearSpacingBuilder() {
+        return new LinearMarginBuilder();
     }
 
 }
