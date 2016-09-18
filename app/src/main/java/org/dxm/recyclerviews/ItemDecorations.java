@@ -22,11 +22,11 @@ public class ItemDecorations {
         }
     }
 
-    public MarginBuilder marginBuilder() {
+    public static MarginBuilder marginBuilder() {
         return new MarginBuilder();
     }
 
-    public RecyclerView.ItemDecoration margin(int margin) {
+    public static RecyclerView.ItemDecoration margin(int margin) {
         return marginBuilder().left(margin).top(margin).right(margin).bottom(margin).build();
     }
 
