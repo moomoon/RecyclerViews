@@ -56,12 +56,10 @@ public class GridSpacingBuilder {
             RecyclerView.LayoutParams lp = (RecyclerView.LayoutParams) view.getLayoutParams();
             int adapterPos = lp.getViewAdapterPosition();
             int spanIndex = spanSizeLookup.getSpanIndex(adapterPos, spanCount);
-            int spanEndIndex = spanIndex + spanSizeLookup.getSpanSize(adapterPos);
             int spanGroupIndex = spanSizeLookup.getSpanGroupIndex(adapterPos, spanCount);
             boolean left = spanIndex != 0;
             boolean top = spanGroupIndex != 0;
-            boolean right = spanEndIndex < spanCount - 1;
-            outRect.set(left ? interItem : 0, top ? interLine : 0, right ? interItem : 0, 0);
+            outRect.set(left ? interItem : 0, top ? interLine : 0, 0, 0);
         }
     }
 
