@@ -87,6 +87,10 @@ public class ItemDecorations {
             this.interLine = interLine;
             return this;
         }
+
+        public RecyclerView.ItemDecoration build() {
+            return new GridSpacingDecoration(this);
+        }
     }
 
     private static class GridSpacingDecoration extends RecyclerView.ItemDecoration {
