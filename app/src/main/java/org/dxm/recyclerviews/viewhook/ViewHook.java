@@ -15,7 +15,7 @@ import java.util.WeakHashMap;
 
 public abstract class ViewHook {
     private final Map<View, Hook> hooks = new WeakHashMap<>();
-    abstract float computeProgress(@NonNull View view);
+    protected abstract float computeProgress(@NonNull View view);
 
     @Nullable public View viewWithHighestProgressIn(@Nullable ViewGroup parent) {
         View hit = null;
