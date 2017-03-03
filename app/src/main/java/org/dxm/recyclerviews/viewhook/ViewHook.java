@@ -70,6 +70,6 @@ public abstract class ViewHook {
             setProgress(computeProgress(view));
         }
 
-        abstract void onProgressChange(float progress);
+        protected abstract void onProgressChange(float progress);
     }
 }
