@@ -7,7 +7,7 @@ import org.dxm.recyclerviews.itemdecoration.LinearMarginBuilder;
 import org.dxm.recyclerviews.itemdecoration.MarginBuilder;
 
 /**
- * Created by ants on 9/18/16.
+ * Created by phoebe on 9/18/16.
  */
 
 public class ItemDecorations {

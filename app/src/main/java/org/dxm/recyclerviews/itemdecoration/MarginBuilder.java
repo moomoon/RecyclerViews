@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * Created by ants on 9/18/16.
+ * Created by phoebe on 9/18/16.
  */
 
 public class MarginBuilder {

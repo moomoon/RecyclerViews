@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ants on 9/19/16.
+ * Created by phoebe on 9/19/16.
  */
 
 public class ViewTypeBuilder {
